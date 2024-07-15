@@ -18,8 +18,8 @@ def sender():
         msg = request.form["message"]
         user = {"name": [name], "email": [email], "subject": [sub], "message": [msg]}
         print(user)
-        my_email = 'sarikasethia2401@gmail.com'
-        my_pass = "xwcjkjgkdsicnnau"
+        my_email = 'YOUR EMAIL'
+        my_pass = "YOUR APP PASSWORD"
         with smtplib.SMTP('smtp.gmail.com', 587) as connection:
             connection.starttls()
             connection.login(my_email, my_pass)
